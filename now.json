@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "name": "photodrop",
+  "alias": ["photodrop.app", "photodrop.now.sh"],
+  "builds": [{ "src": "web/package.json", "use": "@now/next" }],
+  "routes": [{ "src": "/(.*)", "dest": "/web/$1" }]
+}
